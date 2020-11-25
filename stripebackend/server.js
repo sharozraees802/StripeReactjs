@@ -1,7 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 // TODE:add a stripe key
-const stripe = require("stripe")(process.env.PUBLISHABLE_KEY);
+const stripe = require("stripe")("SECRET_KEY");
 const uuid = require("uuid");
 
 const app = express();

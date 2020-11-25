@@ -1,5 +1,5 @@
 const express = require("express");
-const stripe = require("stripe")(process.env.PUBLISHABLE_KEY);
+const stripe = require("stripe")("SECRET_KEY");
 const uuid = require("uuid");
 const router = express.Router();
 
